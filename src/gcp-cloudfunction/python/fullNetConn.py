@@ -1,9 +1,5 @@
-import json
 import os
-import subprocess
 
-def lambda_handler(event, context):
+def full_net_conn(request):
     os.system('curl google.com')
-    os.system('curl aws.amazonaws.com')
-    
-    return True
+    return jsonify(str("curl of google.com"))

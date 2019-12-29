@@ -1,12 +1,10 @@
-import json
-import os
-import subprocess
+from flask import jsonify
 
-def lambda_handler(event, context):
+# Accessing the disk scratch space of GCF
+def tmp_folder_read_write(request):
     f = open("/tmp/demofile.txt", "w")
-    f.write("file content inside the /tmp of AWS lambda execution environment")
+    f.write("Sample file content inside the local disk mount point (/tmp) of GCF execution env")
     f.close()
 
     f = open("/tmp/demofile.txt", "r")
-    # print(f.read())
-    return {'file': str(f.read())}
+    return jsonify(str(f.read()))

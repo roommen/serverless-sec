@@ -1,6 +1,5 @@
 import json
 import os
-import subprocess
 
 def lambda_handler(event, context):
     os.system('curl google.com')

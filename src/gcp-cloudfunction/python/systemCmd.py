@@ -1,11 +1,13 @@
-import json
 import os
-import subprocess
+from flask import jsonify
 
-def lambda_handler(event, context):
+def system_cmd(request):
     # sample os.system invocation
-    os.system('cat /var/task/lambda_function.py > /tmp/code.txt')
-    os.system('ls -l /tmp/')
+    os.system('ls -l /tmp/ > /tmp/output.txt; ls -l /var >> /tmp/output.txt')
+    os.system('ps auwx >> /tmp/output.txt')
 
-    os.system('ps auwx')
-    os.system('pkill python3.7')
+    f = open("/tmp/output.txt", "r")
+    
+    # Uncomment below line to kill the python proc itself
+    # os.system('pkill python3.7')
+    return jsonify(str(f.read()))

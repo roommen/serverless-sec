@@ -3,7 +3,6 @@ import os
 import subprocess
 
 def lambda_handler(event, context):
-
     subprocess.Popen('touch /tmp/child', shell=True)
 
     os.system('ps auwx > /tmp/process.txt')

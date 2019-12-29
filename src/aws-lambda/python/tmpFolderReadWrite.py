@@ -1,6 +1,4 @@
 import json
-import os
-import subprocess
 
 def lambda_handler(event, context):
     f = open("/tmp/demofile.txt", "w")

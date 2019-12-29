@@ -1,4 +1,4 @@
-Following exploit files are present:
+Following exploit files are present for **AWS Lambda** and **GCP CloudFunction**:
 
 1. `fullNetCon.py` - Full internet access from within the FaaS
 

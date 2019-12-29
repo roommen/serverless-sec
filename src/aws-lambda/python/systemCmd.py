@@ -1,6 +1,5 @@
 import json
 import os
-import subprocess
 
 def lambda_handler(event, context):
     # sample os.system invocation
