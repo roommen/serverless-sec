@@ -1,3 +1,5 @@
+`monkeyPatch.py` - Demonstrates a possible scenario with Python monkey patching that eclipses the current functionality of _os.system()_ with a new definition
+
 Following exploit files are present for **AWS Lambda**, **GCP CloudFunction** and **Azure Functions**:
 
 1. `fullNetCon.py` - Full internet access from within the FaaS environment
