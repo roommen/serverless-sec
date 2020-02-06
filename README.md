@@ -5,6 +5,6 @@ Sample exploit that does a "potential" input injection scenario is kept under th
 
 Various types of exploit examples and scenarios are covered under the `src` folder for each of **AWS Lambda, GCP CloudFunction & Azure Function** FaaS offerings
 
-# Presented at AWS Community Day, Pune 2020
+### Preseted at AWS Community Day, Pune 2020
 
-**Slides available here** - https://www.slideshare.net/RuncyOommen/aws-lambda-security-enhancements
+**Slides available** - https://www.slideshare.net/RuncyOommen/aws-lambda-security-enhancements
